@@ -1,8 +1,9 @@
 # ngino-ngx
 NGINX web server
 
-* container based on nginx:1.13.3-alpine
-* expose port 80, 443, 8080
+## Description
+PHP7 FPM container based on php:7.1.8-fpm-alpine
+expose port 9000
 
-## Installation
-docker pull fenixmedia/ngino-ngx
+## Instalation
+docker pull gregorwebmaster/alpine-php7
