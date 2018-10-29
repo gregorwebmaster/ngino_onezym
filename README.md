@@ -1,8 +1,8 @@
 # ngino onezym
 It's PHP7-fpm with most usualy extensions
 ### Tags
-[PHP 7.2 on Alpine 3.8 - latest](https://gitlab.com/docker-master/ngino_onezym/blob/develop/7.2-fpm/Dockerfile)
-[PHP 7.2 on Alpine 3.8](https://gitlab.com/docker-master/ngino_onezym/blob/develop/7.1-fpm/Dockerfile)
+* PHP 7.2 on Alpine 3.8 - latest [:7.2-fpm](https://gitlab.com/docker-master/ngino_onezym/blob/develop/7.2-fpm/Dockerfile)
+* PHP 7.1 on Alpine 3.8[:7.1-fpm](https://gitlab.com/docker-master/ngino_onezym/blob/develop/7.1-fpm/Dockerfile)
 
 ## Basic information
 * container based on oficial php-fpm-alpine
