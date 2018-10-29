@@ -30,3 +30,7 @@ RUN apk add php7-common \
     
 # cleare installation
 RUN rm -rf /var/cache/apk/*
+
+# set workdir
+RUN mkdir /workdir
+WORKDIR /workdir
