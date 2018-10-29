@@ -1,10 +1,14 @@
 # ngino onezym
 It's PHP7-fpm with most usualy extensions
+### Tags
+[PHP 7.2 on Alpine 3.8 - latest](https://gitlab.com/docker-master/ngino_onezym/blob/develop/7.2-fpm/Dockerfile)
+[PHP 7.2 on Alpine 3.8](https://gitlab.com/docker-master/ngino_onezym/blob/develop/7.1-fpm/Dockerfile)
 
+## Basic information
 * container based on oficial php-fpm-alpine
 * expose port 9000
 
-## Instaled extensions
+### Instaled extensions
 * php7-common 
 * php7-opcache
 * php7-openssl
@@ -31,9 +35,20 @@ It's PHP7-fpm with most usualy extensions
 * php7-zlib
 * php7-zip
 
-
 ## Usage
 ### With docker
-docker pull gregorwebmaster/ngino_onezym -v /my/app/dir:/workspace
+```docker pull gregorwebmaster/ngino_onezym -v "$PWD":/workspace -p 0.0.0.0:9000:9000```
 
 ### With docker-compose
+```
+version: '3.2'
+
+services:
+
+  builder:
+    image: gregorwebmaster/ngino_onezym
+    volumes:
+      - .:/workspace
+    ports:
+      - 9000:9000
+```
