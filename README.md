@@ -6,7 +6,7 @@ It's PHP7-fpm based o linux Alpine with most usualy extensions
 * PHP 7.1 on Alpine 3.8[:7.1-fpm](https://gitlab.com/docker-master/ngino_onezym/blob/develop/7.1-fpm/Dockerfile)
 
 ## Basic information
-* image based on oficial php-fpm-alpine images
+* based on oficial php-fpm-alpine images
 * expose port 9000
 
 ### Instaled extensions
@@ -53,3 +53,11 @@ services:
     ports:
       - 9000:9000
 ```
+
+### Build localy
+1. clone this repository
+2. enter into it
+2. run build script:
+  * for all versions: ``` ./build all ```
+  * for custom version: ``` ./build custom 'version'``` eg. : ``` ./build custom '7.2'```
+  * for latest versions: ``` ./build latest ```
